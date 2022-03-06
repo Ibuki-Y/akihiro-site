@@ -14,14 +14,14 @@ export const MenuButton: VFC<Props> = (props) => {
     <Link as={NextLink} href={hrefs}>
       <Button
         w="100%"
-        h="100px"
-        _focus={{ _focus: "none" }}
+        h={{ base: "70px", sm: "80px", md: "100px" }}
         color="white"
         bg="gray.900"
         fontSize="lg"
         onClick={onClose}
-        _hover={{opacity: 0.5}}
-        _active={{opacity: 0.2}}
+        _hover={{ opacity: 0.5 }}
+        _focus={{ boxShadow: "none" }}
+        _active={{ _active: "none" }}
       >
         {children}
       </Button>

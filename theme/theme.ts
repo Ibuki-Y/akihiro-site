@@ -19,11 +19,6 @@ const theme = extendTheme({
       },
     },
   },
-  textStyles: {
-    h1: {
-      fontSize: ["25px", "40px"],
-    },
-  },
 });
 
 export default theme;

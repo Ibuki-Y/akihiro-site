@@ -16,7 +16,7 @@ export const MenuIcon: VFC<Props> = (props) => {
       variant="unstyled"
       onClick={onOpen}
       _hover={{ opacity: 0.5 }}
-      _focus={{ _focus: "none" }}
+      _focus={{ boxShadow: "none"}}
     />
   );
 };

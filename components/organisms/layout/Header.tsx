@@ -17,7 +17,7 @@ export const Header: VFC = () => {
         p={{ base: 4, md: 6 }}
       >
         <Flex align="center" cursor="default">
-          <Box fontSize={{ base: "2xl", md: "4xl" }} fontWeight={700}>
+          <Box fontSize={{ base: "xl", md: "4xl" }} fontWeight={700}>
             <Text>STARTUP SUCCESS ADVISOR</Text>
           </Box>
         </Flex>
