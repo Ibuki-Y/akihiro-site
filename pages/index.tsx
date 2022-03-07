@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Box m="0 auto" p={{ base: "30px 20px", md: "40px 60px" }}>
+        <Box m="0 auto" p={{ base: "120px 20px", md: "140px 60px" }}>
           <Heading mb={{ base: 8, md: 10 }}>吉島彰宏</Heading>
 
           <Text

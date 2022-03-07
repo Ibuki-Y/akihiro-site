@@ -21,7 +21,7 @@ export const MenuButton: VFC<Props> = (props) => {
         onClick={onClose}
         _hover={{ opacity: 0.5 }}
         _focus={{ boxShadow: "none" }}
-        _active={{ _active: "none" }}
+        _active={{ _active: "none", WebkitTapHighlightColor: "rgba(0,0,0,0)" }}
       >
         {children}
       </Button>

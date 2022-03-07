@@ -8,7 +8,7 @@ export const Header: VFC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <header>
+    <header style={{position:"fixed",top:0,left:0,width:"100%"}}>
       <Flex
         bg="gray.900"
         color="white"
