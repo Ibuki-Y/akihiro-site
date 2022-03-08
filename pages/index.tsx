@@ -61,10 +61,11 @@ const Home: NextPage = () => {
           </Text>
 
           <Flex>
-            <Link href="https://yoshijima.me/" _hover={{ opacity: 0.7 }} mr={4}>
+            <Link as="a" href="https://yoshijima.me/" _hover={{ opacity: 0.7 }} mr={4}>
               <DescriptionIcon />
             </Link>
             <Link
+              as="a"
               href="https://twitter.com/yoshijima_a/"
               _hover={{ opacity: 0.7 }}
               mr={4}
@@ -72,6 +73,7 @@ const Home: NextPage = () => {
               <TwitterIcon />
             </Link>
             <Link
+              as="a"
               href="https://www.facebook.com/akihiro.yoshijima/"
               _hover={{ opacity: 0.7 }}
             >
