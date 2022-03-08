@@ -1,9 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Heading, Flex, Text, Box } from "@chakra-ui/react";
-import StopRoundedIcon from "@mui/icons-material/StopRounded";
+import { Heading, Text, Box } from "@chakra-ui/react";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
+
+import { ProfileTitle } from "../components/atoms/ProfileTitle";
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Box m="0 auto" p={{ base: "120px 20px", md: "140px 60px" }}>
+        <Box m="0 auto" p={{ base: "40px 20px", md: "50px 60px" }}>
           <Heading mb={{ base: 8, md: 10 }}>吉島彰宏</Heading>
 
           <Text
@@ -22,23 +23,41 @@ const Home: NextPage = () => {
             fontSize={{ base: "md", md: "lg" }}
             wordBreak="keep-all"
           >
-            スタートアップのサクセスアドバイザー
-            <br />
-            VCを経て2009年に独立 ファイナンスが専門
-            <br />
-            8年間でシード〜シリーズGまで20件以上のラウンドを実施中
-            <br />
-            創業期から帯同 note トレタ クラウドクレジット DrJOY ワンダープラネット
-            JARMECに関与
-          </Text>
+            <Box mb={10}>
+              <ProfileTitle title="仕事" />
+              スタートアップのサクセスアドバイザー
+              <br />
+              専門はファイナンス
+              <br />
+              過去8年間でシードからシリーズGまで20ラウンド以上をサポート
+              <br />
+              調達資金の多くを人件費に使うため, 人材の力をいかに引き出すかにも携わる
+            </Box>
 
-          <Box mb={10}>
-            <Flex align="center">
-              <StopRoundedIcon fontSize="small" />
-              <Text>e-mail</Text>
-            </Flex>
-            <Text pl={1}>yoshijima@y-associates.net</Text>
-          </Box>
+            <Box mb={10}>
+              <ProfileTitle title="経歴" />
+              上智大学卒業
+              <br />
+              VCを経て2009年に独立
+            </Box>
+
+            <Box mb={10}>
+              <ProfileTitle title="特徴" />
+              創業期から帯同することが多く,
+              <br />
+              関わる会社の長期的サクセスを目的に活動
+            </Box>
+
+            <Box mb={10}>
+              <ProfileTitle title="特徴" />
+              note トレタ クラウドクレジット Dr.JOY ワンダープラネット JARMEC
+            </Box>
+
+            <Box mb={10}>
+              <ProfileTitle title="E-mail" />
+              yoshijima@y-associates.net
+            </Box>
+          </Text>
 
           <Box>
             <Box
