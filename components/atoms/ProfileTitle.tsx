@@ -7,5 +7,5 @@ type Props = {
 
 export const ProfileTitle: VFC<Props> = (props) => {
   const { title } = props;
-  return <Text fontWeight={700}>{title}</Text>;
+  return <Text fontWeight={800}>{title}</Text>;
 };

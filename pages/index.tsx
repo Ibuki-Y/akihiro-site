@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 
           <Text
             mb={10}
-            fontWeight={500}
+            fontWeight={400}
             fontSize={{ base: "md", md: "lg" }}
             wordBreak="keep-all"
           >
