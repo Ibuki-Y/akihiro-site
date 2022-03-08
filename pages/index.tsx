@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Heading, Text, Box, Flex } from "@chakra-ui/react";
+import { Heading, Text, Box, Flex, Link } from "@chakra-ui/react";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import DescriptionIcon from "@mui/icons-material/Description";
 
-//import Note from "../public/logo.svg";
 import { ProfileTitle } from "../components/atoms/ProfileTitle";
 
 const Home: NextPage = () => {
@@ -15,10 +15,15 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Box m="0 auto" p={{ base: "40px 20px", md: "50px 100px" }}>
+        <Box m="0 auto" p={{ base: "40px 20px", md: "60px 100px" }}>
           <Heading mb={{ base: 8, md: 10 }}>吉島彰宏</Heading>
 
-          <Text fontWeight={500} fontSize={{ base: "md", md: "lg" }} wordBreak="keep-all">
+          <Text
+            mb={10}
+            fontWeight={500}
+            fontSize={{ base: "md", md: "lg" }}
+            wordBreak="keep-all"
+          >
             <Box mb={10}>
               <ProfileTitle title="仕事" />
               スタートアップのサクセスアドバイザー
@@ -49,28 +54,29 @@ const Home: NextPage = () => {
               note&ensp;トレタ&ensp;クラウドクレジット&ensp;Dr.JOY&ensp;ワンダープラネット&ensp;JARMEC
             </Box>
 
-            <Box mb={10}>
+            <Box>
               <ProfileTitle title="E-mail" />
               yoshijima@y-associates.net
             </Box>
           </Text>
 
-          <Flex m={0} align="center">
-            <Box
-              as="a"
+          <Flex>
+            <Link href="https://yoshijima.me/" _hover={{ opacity: 0.7 }} mr={4}>
+              <DescriptionIcon />
+            </Link>
+            <Link
               href="https://twitter.com/yoshijima_a/"
               _hover={{ opacity: 0.7 }}
               mr={4}
             >
               <TwitterIcon />
-            </Box>
-            <Box
-              as="a"
+            </Link>
+            <Link
               href="https://www.facebook.com/akihiro.yoshijima/"
               _hover={{ opacity: 0.7 }}
             >
               <FacebookIcon />
-            </Box>
+            </Link>
           </Flex>
         </Box>
       </main>
