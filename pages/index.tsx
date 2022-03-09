@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Box m="0 auto" p={{ base: "40px 20px", md: "60px 100px" }}>
+        <Box p={{ base: "40px 20px", md: "60px 100px" }}>
           <Heading mb={{ base: 8, md: 10 }}>吉島彰宏</Heading>
 
           <Text
@@ -61,13 +61,20 @@ const Home: NextPage = () => {
           </Text>
 
           <Flex>
-            <Link as="a" href="https://yoshijima.me/" _hover={{ opacity: 0.7 }} mr={4}>
+            <Link
+              as="a"
+              href="https://yoshijima.me/"
+              _hover={{ opacity: 0.7 }}
+              _focus={{ _focus: "none" }}
+              mr={4}
+            >
               <DescriptionIcon />
             </Link>
             <Link
               as="a"
               href="https://twitter.com/yoshijima_a/"
               _hover={{ opacity: 0.7 }}
+              _focus={{ _focus: "none" }}
               mr={4}
             >
               <TwitterIcon />
@@ -76,6 +83,7 @@ const Home: NextPage = () => {
               as="a"
               href="https://www.facebook.com/akihiro.yoshijima/"
               _hover={{ opacity: 0.7 }}
+              _focus={{ _focus: "none" }}
             >
               <FacebookIcon />
             </Link>
