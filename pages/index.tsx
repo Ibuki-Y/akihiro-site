@@ -67,6 +67,8 @@ const Home: NextPage = () => {
               _hover={{ opacity: 0.7 }}
               _focus={{ _focus: "none" }}
               mr={4}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <DescriptionIcon />
             </Link>
@@ -76,6 +78,8 @@ const Home: NextPage = () => {
               _hover={{ opacity: 0.7 }}
               _focus={{ _focus: "none" }}
               mr={4}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <TwitterIcon />
             </Link>
@@ -84,6 +88,8 @@ const Home: NextPage = () => {
               href="https://www.facebook.com/akihiro.yoshijima/"
               _hover={{ opacity: 0.7 }}
               _focus={{ _focus: "none" }}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FacebookIcon />
             </Link>
